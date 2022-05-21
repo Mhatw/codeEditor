@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script
+      src="https://kit.fontawesome.com/b97e2fdc5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code editor</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div>
+        <textarea
+          name=""
+          id="html-code"
+          placeholder="html"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="gutter-col gutter-col-1"></div>
+      <div>
+        <textarea
+          name=""
+          id="css-code"
+          placeholder="css"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div>
+        <textarea
+          name=""
+          id="js-code"
+          placeholder="js"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="gutter-row gutter-row-1"></div>
+      <div>
+        <iframe name="editor" id="editor" srcdoc="" frameborder="0"></iframe>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
