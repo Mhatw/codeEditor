@@ -1,7 +1,6 @@
 @import url(reset.css);
 * {
   margin: 0;
-  min-height: 5rem;
   box-sizing: border-box;
 }
 *::before,
@@ -42,6 +41,7 @@ body {
 
 .gutter-row-1 {
   grid-row: 2;
+  height: auto;
 }
 
 textarea {
@@ -72,6 +72,9 @@ textarea:focus {
 #js-code {
   background-image: url(assets/js.svg);
 }
+#editor {
+  background-image: url(assets/code.svg);
+}
 iframe {
   /* border: #333 solid 1px; */
   width: 100%;
@@ -79,4 +82,7 @@ iframe {
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  background-repeat: no-repeat;
+  background-size: 34px;
+  background-position: calc(100% - 1rem) calc(100% - 1rem);
 }
